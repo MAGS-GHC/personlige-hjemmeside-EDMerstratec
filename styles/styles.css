@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+    }
+.navbar{
+    display: inline;
+    border: 2px solid orange;
+    display: flex;
+    flex-wrap: nowrap;
+ }
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    }
