@@ -1,14 +1,27 @@
 h1 {
-    color: blue;
-    }
-.navbar{
-    display: inline;
-    border: 2px solid orange;
-    display: flex;
-    flex-wrap: nowrap;
- }
+  color: rgb(0, 0, 70);
+  text-align: center;
+  border-style: double;
+}
+.navbar {
+  display: inline;
+  border: 2px solid orange;
+  display: flex;
+  flex-wrap: nowrap;
+}
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    }
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: lightgrey;
+}
+p {
+  border-style: dashed;
+  display: inline;
+}
+* {
+  box-sizing: border-box;
+}
+.AboutMe {
+  display: none;
+}

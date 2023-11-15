@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles\styles.css">
-    <script src="/scripts/app.js"></script>
+    <script defer src="/scripts/app.js"></script>
 </head>
 <body>
     <h1> Min personlige hjemmeside! </h1>
+<div>Navigation Bar
+    <ul>
+        <li><p id="navAboutMe" onmouseover="displayAboutMe()">About Me</button></li>
+        <li><p id="navProjects" onmouseover="displayProjects()">Projects</p></li>
+    </ul>
+    <p class="AboutMe">First Test</p>
+</div>
+<!-- ABOUT ME begins-->
+<div id="AboutMe" style="display: none;">AboutMeDisplayed</div>
 </body>
 </html>
