@@ -16,8 +16,9 @@
                 <li><p id="navProjects" onmouseover="displayProjects()">Projects</p></li>
                 <li><p id="navCat" onmouseover="displayCat()">Kitty Pictures</p></li>
             </ul>
+            <button id="stopCats" style="display: none;" onClick="stopCats()">Okay, enough with the cats</button>
         </div>
-<!-- ABOUT ME begins-->
+<!-- Righthand grid display begins-->
         <div class="rightDisplay"> <!-- box to keep background?-->
             <div id="AboutMe" style="display: none;" class="rightDisplay fade-in">
                 <h1>About Me!</h1>
@@ -39,16 +40,33 @@
                     <p>In terms of programming, I have no concrete experience prior to attending Mercantec. I have played around with a few values in the code of some games I liked, adjusting them to my liking, which required some curiosity and stubbornness to decipher and uncross my eyes! I'm excited to now take that visual familiarity to a more practical level, to write my own code and programs.</p>
                 </div>
             </div>
-            <div id="Projects" style="display: none;" class="fade-in">
+            <div id="Projects" style="display: none;" class="rightDisplay fade-in">
                 <h1>Projects!</h1>
-                <pre>rada
-                rada
-                radaaa
-                </pre>
+                <div class="trioSelect">
+                    <h2 onmouseover="displayProject1()">IP converter</h2>
+                    <h2 onmouseover="displayProject2()">WIP!</h2>
+                    <h2 onmouseover="displayProject3()">WIP!</h2>
+                </div>
+                <!-- Redirect with image option commented out. iframe Should be fine with low impact scripts. Insert </a>
+                <a id="Project1" style="display: none;" class="fade-in" href="pages/ipConverter.html" target="_blank">
+                    <img src="/Assets/ipConverterPic.PNG">-->
+                <div  id="Project1" style="display: none;" class="fade-in">
+                    <iframe src="/pages/ipConverter.html" width="960" height="360"></iframe>
+                </div>
+                <div  id="Project2" style="display: none;" class="fade-in">
+                    <img src="/Assets/WIPRabbit.jpg">
+                </div>
+                <div  id="Project3" style="display: none;" class="fade-in">
+                    <img src="/Assets/WIPRabbit.jpg">
+                </div>
+                
             </div>
-            <div id="Cats" style="display: none;" class="fade-in">Caaaaats
+            <div id="Cats" style="display: none;" class="fade-in">
+                <img src="/Assets/WIPRabbit.jpg" onmouseover="startCats()">
             </div>
         </div> <!--end rightDisplay-->
     </div> <!--end gridMain-->
+    <!--Cat pictures-->
+    <img id="randomCat" src="/Assets/WIPRabbit.jpg">
 </body>
 </html>
