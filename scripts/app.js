@@ -1,8 +1,8 @@
 function displayAboutMe() {
-  console.log("Hello func 1");
-  document.getElementById("AboutMe").style.display = "block";
+  document.getElementById("Projects").style.display = "none";
+  document.getElementById("AboutMe").style.display = "flex";
 }
 function displayProjects() {
-  console.log("Hello func 2");
   document.getElementById("AboutMe").style.display = "none";
+  document.getElementById("Projects").style.display = "flex";
 }

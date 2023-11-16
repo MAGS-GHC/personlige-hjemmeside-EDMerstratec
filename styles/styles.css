@@ -15,13 +15,27 @@ body {
   height: 100vh;
   background-color: lightgrey;
 }
-p {
-  border-style: dashed;
+.navChoices {
+  border-style: solid;
   display: inline;
 }
 * {
   box-sizing: border-box;
 }
-.AboutMe {
-  display: none;
+.rightDisplay {
+  display: flex;
+  flex-flow: column nowrap; /*wrap? test later*/
+  /*justify-content: flex-end;*/
+  align-items: flex-end;
+}
+.fade-in {
+  animation: fade-in 2s;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
