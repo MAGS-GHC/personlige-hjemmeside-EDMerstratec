@@ -3,33 +3,48 @@ h1 {
   text-align: center;
   border-style: double;
 }
-.navbar {
-  display: inline;
-  border: 2px solid orange;
-  display: flex;
-  flex-wrap: nowrap;
-}
 body {
   display: flex;
   flex-direction: column;
   height: 100vh;
   background-color: lightgrey;
 }
+.gridMain {
+  display: grid;
+  grid-template-columns: 160px auto auto auto;
+  grid-template-rows: 720px auto auto auto;
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+  text-align: center;
+}
+.gridMain > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+}
 .navChoices {
   border-style: solid;
-  display: inline;
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 * {
   box-sizing: border-box;
 }
 .rightDisplay {
-  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  /*display: flex;
   flex-flow: column nowrap; /*wrap? test later*/
-  /*justify-content: flex-end;*/
-  align-items: flex-end;
+  /*justify-content: flex-end;
+  align-items: flex-end;*/
+}
+.trioSelect {
+  display: flex;
+  justify-content: space-around;
 }
 .fade-in {
-  animation: fade-in 2s;
+  animation: fade-in 1s;
 }
 @keyframes fade-in {
   from {

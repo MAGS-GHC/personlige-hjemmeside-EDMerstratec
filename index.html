@@ -9,32 +9,46 @@
 </head>
 <body>
     <h1> Min personlige hjemmeside! </h1>
-<div>Navigation Bar
-    <ul class="navChoices fade-in">
-        <li><p id="navAboutMe" onmouseover="displayAboutMe()">About Me</button></li>
-        <li><p id="navProjects" onmouseover="displayProjects()">Projects</p></li>
-    </ul>
-    <p class="AboutMe">AboutMe First Test</p>
-</div>
+    <div class="gridMain">
+        <div class="navChoices fade-in">
+            <ul>
+                <li><p id="navAboutMe" onmouseover="displayAboutMe()">About Me</button></li>
+                <li><p id="navProjects" onmouseover="displayProjects()">Projects</p></li>
+                <li><p id="navCat" onmouseover="displayCat()">Kitty Pictures</p></li>
+            </ul>
+        </div>
 <!-- ABOUT ME begins-->
-<div id="AboutMe" style="display: none;" class="rightDisplay fade-in">
-    <h1>About Me!</h1>
-    <h2>Who I am</h2>
-    <p>Hello world! As of October 2023, I'm a Software Developer student at Mercantec. There's a long road ahead before I can really call myself a programmer, but I'm embracing the challenge and enjoying the steps thus far! </p>
-    <p>My free time is often spent under a cozy blanket, reading and listening to music. I'm also an avid tabletop roleplayer, getting out my (virtual) books and dice weekly to both run and play games. Unsurprisingly, video games also interest me a great deal, but I often find that I spend more time thinking about a game's design and puzzles than actually playing it.</p>
-    <h2>Where I've been</h2>
-    <p>I currently reside in Denmark, where I was born. Only a week post birth, my family moved to Texas, USA, which was the beginning of a pattern; a whirlwind of moves and schools, mostly centered in Denmark and Texas, although a bit of Germany and Utah, USA was sneaked in as well!</p>
-    <p>In my adult life, I've settled down and quite prefer to keep things stable and predictable. I feel that I have seen enough of the wider world to appreciate its scope, and live with an eye for the vibrant details of "home", rather than yearning for the new. Alternatively, we could just call me boring!</p>
-    <h2>What I've experienced</h2>
-    <p>I'd venture to say that my international childhood has given me some worldly experience and understanding. Outside of software, I have always been fascinated with history and archaeology; I interned at the Houston Museum of Natural Sciences under Dr. Van Tuerenhout and participated in the archaeological dig of Wolf Village in Utah.</p>
-    <p>In terms of programming, I have no concrete experience prior to attending Mercantec. I have played around with a few values in the code of some games I liked, adjusting them to my liking, which required some curiosity and stubbornness to decipher and uncross my eyes! I'm excited to now take that visual familiarity to a more practical level, to write my own code and programs.</p>
-</div>
-<div id="Projects" style="display: none;" class="rightDisplay fade-in">
-    <h1>Projects!</h1>
-    <pre>rada
-        rada
-        radaaa
-    </pre>
-</div>
+        <div class="rightDisplay"> <!-- box to keep background?-->
+            <div id="AboutMe" style="display: none;" class="rightDisplay fade-in">
+                <h1>About Me!</h1>
+                <div class="trioSelect">
+                    <h2 onmouseover="displayAboutMeWho()">Who I am</h2>
+                    <h2 onmouseover="displayAboutMeWhere()">Where I've been</h2>
+                    <h2 onmouseover="displayAboutMeWhat()">What I've experienced</h2>
+                </div>
+                <div id="AboutMeWho" style="display: none;" class="fade-in">
+                    <p>Hello world! As of October 2023, I'm a Software Developer student at Mercantec. There's a long road ahead before I can really call myself a programmer, but I'm embracing the challenge and enjoying the steps thus far! </p>
+                    <p>My free time is often spent under a cozy blanket, reading and listening to music. I'm also an avid tabletop roleplayer, getting out my (virtual) books and dice weekly to both run and play games. Unsurprisingly, video games also interest me a great deal, but I often find that I spend more time thinking about a game's design and puzzles than actually playing it.</p>
+                </div>
+                <div id="AboutMeWhere" style="display: none;" class="fade-in">
+                    <p>I currently reside in Denmark, where I was born. Only a week post birth, my family moved to Texas, USA, which was the beginning of a pattern; a whirlwind of moves and schools, mostly centered in Denmark and Texas, although a bit of Germany and Utah, USA was sneaked in as well!</p>
+                    <p>In my adult life, I've settled down and quite prefer to keep things stable and predictable. I feel that I have seen enough of the wider world to appreciate its scope, and live with an eye for the vibrant details of "home", rather than yearning for the new. Alternatively, we could just call me boring!</p>
+                </div>
+                <div id="AboutMeWhat" style="display: none;" class="fade-in">
+                    <p>I'd venture to say that my international childhood has given me some worldly experience and understanding. Outside of software, I have always been fascinated with history and archaeology; I interned at the Houston Museum of Natural Sciences under Dr. Van Tuerenhout and participated in the archaeological dig of Wolf Village in Utah.</p>
+                    <p>In terms of programming, I have no concrete experience prior to attending Mercantec. I have played around with a few values in the code of some games I liked, adjusting them to my liking, which required some curiosity and stubbornness to decipher and uncross my eyes! I'm excited to now take that visual familiarity to a more practical level, to write my own code and programs.</p>
+                </div>
+            </div>
+            <div id="Projects" style="display: none;" class="fade-in">
+                <h1>Projects!</h1>
+                <pre>rada
+                rada
+                radaaa
+                </pre>
+            </div>
+            <div id="Cats" style="display: none;" class="fade-in">Caaaaats
+            </div>
+        </div> <!--end rightDisplay-->
+    </div> <!--end gridMain-->
 </body>
 </html>
