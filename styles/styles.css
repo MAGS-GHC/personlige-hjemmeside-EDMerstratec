@@ -1,5 +1,7 @@
+* {
+  box-sizing: border-box;
+}
 h1 {
-  color: rgb(0, 0, 70);
   text-align: center;
   border-style: double;
 }
@@ -7,19 +9,19 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: lightgrey;
+  background-image: url("/Assets/sunflowerField.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .gridMain {
   display: grid;
   grid-template-columns: 160px auto auto auto;
   grid-template-rows: 720px auto auto auto;
   gap: 10px;
-  background-color: #2196f3;
   padding: 10px;
   text-align: center;
 }
 .gridMain > div {
-  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 0;
 }
 .navChoices {
@@ -27,17 +29,26 @@ body {
   text-align: left;
   grid-column-start: 1;
   grid-column-end: 2;
+  background-image: url("/Assets/rabbit-sidebar1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
 }
-* {
-  box-sizing: border-box;
+.icon {
+  width: 30px;
+  height: 30px;
+}
+#iconLine {
+  text-align: center;
 }
 .rightDisplay {
   grid-column-start: 2;
   grid-column-end: 5;
-  /*display: flex;
-  flex-flow: column nowrap; /*wrap? test later*/
-  /*justify-content: flex-end;
-  align-items: flex-end;*/
+  background-image: url("/Assets/dried-flowers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
 }
 .trioSelect {
   display: flex;

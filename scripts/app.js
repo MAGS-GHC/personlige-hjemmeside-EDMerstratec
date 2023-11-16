@@ -48,7 +48,7 @@ function displayProject3() {
 //Cats subcategories
 let catsInterval;
 function startCats() {
-  catsInterval = window.setInterval(catPics, 2000);
+  //catsInterval = window.setInterval(catPics, 2000);
 }
 function catPics() {
   document.getElementById("randomCat").style.animation =
