@@ -1,17 +1,17 @@
 function displayAboutMe() {
   document.getElementById("AboutMe").style.display = "";
-  document.getElementById("Cats").style.display = "none";
+  document.getElementById("Buns").style.display = "none";
   document.getElementById("Projects").style.display = "none";
 }
 function displayProjects() {
   document.getElementById("AboutMe").style.display = "none";
   document.getElementById("Projects").style.display = "";
-  document.getElementById("Cats").style.display = "none";
+  document.getElementById("Buns").style.display = "none";
 }
-function displayCat() {
+function displayBuns() {
   document.getElementById("AboutMe").style.display = "none";
   document.getElementById("Projects").style.display = "none";
-  document.getElementById("Cats").style.display = "";
+  document.getElementById("Buns").style.display = "";
 }
 //About Me subcategories
 function displayAboutMeWho() {
