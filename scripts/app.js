@@ -8,7 +8,7 @@ function displayProjects() {
   document.getElementById("Projects").style.display = "";
   document.getElementById("Buns").style.display = "none";
 }
-function displayBuns() {
+function displayBun() {
   document.getElementById("AboutMe").style.display = "none";
   document.getElementById("Projects").style.display = "none";
   document.getElementById("Buns").style.display = "";
