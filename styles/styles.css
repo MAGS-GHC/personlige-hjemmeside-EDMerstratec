@@ -6,10 +6,7 @@ h1 {
   border-style: double;
 }
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-image: url("/Assets/sunflowerField.jpg");
+  background-image: url("/Assets/bg/sunflowerField.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -22,18 +19,19 @@ body {
   text-align: center;
 }
 .gridMain > div {
-  padding: 20px 0;
+  /*experiment with*/
+  border-style: solid;
 }
 .navChoices {
   border-style: solid;
   text-align: left;
   grid-column-start: 1;
   grid-column-end: 2;
-  background-image: url("/Assets/rabbit-sidebar1.jpg");
+  background-image: url("/Assets/bg/rabbit-sidebar1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 .icon {
   width: 30px;
@@ -45,16 +43,16 @@ body {
 .rightDisplay {
   grid-column-start: 2;
   grid-column-end: 5;
-  background-image: url("/Assets/dried-flowers.jpg");
+  background-image: url("/Assets/bg/dried-flowers.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 .trioSelect {
   display: flex;
   justify-content: space-around;
 }
-#randomCat {
+#randomBun {
   display: none;
   position: absolute;
 }

@@ -45,22 +45,22 @@ function displayProject3() {
   document.getElementById("Project2").style.display = "none";
   document.getElementById("Project3").style.display = "";
 }
-//Cats subcategories
-let catsInterval;
-function startCats() {
-  //catsInterval = window.setInterval(catPics, 2000);
+//Bunny subcategories
+let bunsInterval;
+function startBuns() {
+  //bunsInterval = window.setInterval(bunPics, 2000);
 }
-function catPics() {
-  document.getElementById("randomCat").style.animation =
+function bunPics() {
+  document.getElementById("randomBun").style.animation =
     "fade-both 2s alternate";
-  document.getElementById("randomCat").style.display = "block";
-  //window.setTimeout(removeCat, 5000);
-  function removeCat() {
-    document.getElementById("randomCat").style.display = "none";
+  document.getElementById("randomBun").style.display = "block";
+  //window.setTimeout(removeBun, 5000);
+  function removeBun() {
+    document.getElementById("randomBun").style.display = "none";
   }
 }
-function stopCats() {
-  clearInterval(catsInterval);
+function stopBuns() {
+  clearInterval(bunsInterval);
 }
 function testInterval() {
   console.log("testInterval");
